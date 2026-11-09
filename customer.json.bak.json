@@ -1,0 +1,143 @@
+[
+	{
+		"DeviceLocation":"總表",
+		"DeviceUniqueName": "RootMeter",
+		"Description": "",
+		"DeviceInfo":{
+			"ModbusCommand":{
+				"deviceID": 1,
+				"functionCode": 3,
+				"registers": [
+					{
+						"address": 1016,
+						"count": 3
+					},
+					{
+						"address": 1007,
+						"count": 4
+					}				
+				]
+			},
+			"parseInfo": [
+				{
+					"ResolveLocation": 0,
+					"ResolveLength": 1,
+					"DataType": "short",
+					"Endian": "Big-Endian",
+					"Multipler": 0.1,
+					"FieldName": "R-Phase Voltage"
+				},
+				{
+					"ResolveLocation": 1,
+					"ResolveLength":1,
+					"DataType": "short",
+					"Endian": "Big-Endian",
+					"Multipler": 0.1,
+					"FieldName": "S-Phase Voltage"
+				},
+				{
+					"ResolveLocation": 2,
+					"DataType": "short",
+					"ResolveLength": 1,
+					"Endian": "Big-Endian",
+					"Multipler": 0.1,
+					"FieldName": "T-Phase Voltage"
+				},
+				{
+					"ResolveLocation": 3,
+					"DataType": "double",
+					"ResolveLength": 4,
+					"Endian": "Big-Endian",
+					"Multipler": 1,
+					"FieldName": "Wh"
+				}
+			]
+		}
+	},
+	{
+		"DeviceLocation":"VCB-1",
+		"DeviceUniqueName": "VCBMeter",
+		"Description": "",
+		"DeviceInfo":{
+			"ModbusCommand":{
+				"deviceID": 2,
+				"functionCode": 3,
+				"registers": [
+					{
+						"address": 1032,
+						"count": 6
+					}
+				]
+			},
+			"parseInfo": [
+				{
+					"ResolveLocation": 0,
+					"ResolveLength": 2,
+					"DataType": "float",
+					"Endian": "Big-Endian",
+					"Multipler": 0.1,
+					"FieldName": "R-Phase Voltage"
+				},
+				{
+					"ResolveLocation": 2,
+					"ResolveLength": 2,
+					"DataType": "float",
+					"Endian": "Big-Endian",
+					"Multipler": 0.1,
+					"FieldName": "S-Phase Voltage"
+				},
+				{
+					"ResolveLocation": 4,
+					"ResolveLength": 2,
+					"DataType": "float",
+					"Endian": "Big-Endian",
+					"Multipler": 0.1,
+					"FieldName": "T-Phase Voltage"
+				}
+			]
+		}
+	},
+	{
+		"DeviceLocation":"VCB-2",
+		"DeviceUniqueName": "VCBMeter_2",
+		"Description": "",
+		"DeviceInfo":{
+			"ModbusCommand":{
+				"deviceID": 3,
+				"functionCode": 3,
+				"registers": [
+					{
+						"address": 1016,
+						"count": 3
+					}
+				]
+			},
+			"parseInfo": [
+				{
+					"ResolveLocation": 0,
+					"ResolveLength": 1,
+					"DataType": "short",
+					"Endian": "Big-Endian",
+					"Multipler": 0.1,
+					"FieldName": "R-Phase Voltage"
+				},
+				{
+					"ResolveLocation": 1,
+					"ResolveLength": 1,
+					"DataType": "short",
+					"Endian": "Big-Endian",
+					"Multipler": 0.1,
+					"FieldName": "S-Phase Voltage"
+				},
+				{
+					"ResolveLocation": 2,
+					"ResolveLength": 1,
+					"DataType": "short",
+					"Endian": "Big-Endian",
+					"Multipler": 0.1,
+					"FieldName": "T-Phase Voltage"
+				}
+			]
+		}
+	}
+]
