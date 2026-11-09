@@ -1,8 +1,8 @@
 # 電力資訊
 
-尚湧電力資訊測試DashBoard
+電力資訊測試DashBoard
 
-目前使用電表: RITA LDA110-E
+目前使用電表: RITA LDA110-E、PA310
 
 UI 轉 PY
 
